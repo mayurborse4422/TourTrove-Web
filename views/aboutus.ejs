@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TourTrove</title>
+  <link rel="icon" href="assets/titlelogo.jpg" type="image/x-icon">
+</head>
+<style>
+    .aboutus{
+        position: absolute;
+        top: 100px;
+        left: 15%;
+        width: 75%;
+    }
+    h1, h2{
+        margin-top: 20px;
+        margin-bottom: 3px;
+    }
+    p, li{
+        color: #5a5b5c;
+        font-size: 1.1rem;
+    }
+    b{
+        color: black;
+    }
+</style>
+<body>
+    <%- include("includes/Navbar.ejs") %>
+    <div class="aboutus">
+        <h1>About TourTrove</h1>
+        <p>Welcome to TourTrove, your ultimate destination for hassle-free holiday package bookings.</p>
+        
+        <h2 class="title">Our Mission</h2>
+        <p>At TourTrove, our mission is to provide unforgettable travel experiences by offering a wide range of curated holiday packages, exceptional customer service, and seamless booking processes.</p>
+        
+        <h2>Our Values</h2>
+        <ul>
+            <li><b>Customer Satisfaction:</b> We prioritize customer satisfaction above all else.</li>
+            <li><b>Quality:</b> We ensure the highest quality standards in our services and packages.</li>
+            <li><b>Transparency:</b> We believe in transparent pricing and clear communication.</li>
+            <li><b>Innovation:</b> We continuously strive to innovate and improve our services.</li>
+            <li><b>Responsibility:</b> We are committed to responsible tourism practices and environmental sustainability.</li>
+        </ul>
+        
+        <h2>Meet Our Team</h2>
+        <p>Our team consists of passionate travel enthusiasts dedicated to making your vacation dreams a reality.</p>
+        
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feedback, or inquiries, please don't hesitate to contact us:</p>
+        <ul>
+            <li>Email: info@tourtrove.com</li>
+            <li>Phone: +1-123-456-7890</li>
+        </ul>
+    </div>
+    <div style="height: 250px;"></div>
+    <%- include("includes/footer.ejs") %>
+</body>
+</html>

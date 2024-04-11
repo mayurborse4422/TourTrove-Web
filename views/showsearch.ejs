@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TourTrove</title>
+  <link rel="icon" href="assets/titlelogo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/showsearch.css">
+</head>
+<body>
+    <%- include("includes/Navbar.ejs") %>
+    <div class="searchcards">
+    <% for(let result of results) { %>
+    <a href="/<%= result._id %>">
+    <div class="searchcard">
+        <div class="searchcard__item">
+          <div class="searchcard__img">
+            <img src="<%= result.image.url %>" class="searchcard__img1">
+          </div>
+          <div class="searchcard__content">
+            <div class="searchcard__title"><b><%= result.title %></b></div>
+            <div class="searchcard__duration"><i class="fa-regular fa-calendar"></i>&nbsp;<%= result.duration %></div>
+            <% if('state' in  result) { %>
+                <div class="searchcard__location"><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;<%= result.state %>&nbsp;,&nbsp;<%= result.country %></div>
+            <% } %>
+            <% if(!('state' in  result)){%>
+                <div class="searchcard__location"><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;<%= result.country %></div>
+            <% } %>
+            <div class="searchcard__price">&#8377; <%= result.price.toLocaleString("en-IN") %></div>
+          </div>
+        </div>
+    </div>
+</a>
+    <% } %>
+</div>
+<div style="height: 0;"></div>
+    <%- include("includes/footer.ejs") %>
+</body>
+</html>

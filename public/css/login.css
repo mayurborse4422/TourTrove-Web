@@ -1,0 +1,59 @@
+body {
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
+}
+
+.loginform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px; 
+    border: 1px solid black;
+    border-radius: 23px;
+    padding: 20px;
+    background-color: #FAFAFF;
+    position: absolute;
+    top: 20%;
+    left: 37%;
+}
+
+.logintitle {
+    display: flex;
+    justify-content: center;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+button {
+    margin-top: 6px;
+}
+
+.signup {
+    font-size: 14px;
+    margin-top: 20px;
+}
+h6{
+    color: red;
+    font-size: 12px;
+}
+h5{
+    color: red;
+    font-size: 16px;
+}
+
+.password{
+    margin-top: 20px;
+}
+
+.loginerror{
+    display: flex;
+    flex-direction: column;
+}
+#loginerror{
+    margin-inline: auto;
+}

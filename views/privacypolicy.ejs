@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TourTrove</title>
+  <link rel="icon" href="assets/titlelogo.jpg" type="image/x-icon">
+</head>
+<style>
+    .privacypolicy{
+        position: absolute;
+        top: 110px;
+        width: 70%;
+        left: 15%;
+    }
+    h1, h2{
+        margin-top: 20px;
+        margin-bottom: 3px;
+    }
+    p, li{
+        color: #5a5b5c;
+        font-size: 1.1rem;
+    }
+</style>
+<body>
+    <%- include("includes/Navbar.ejs") %>
+    <div class="privacypolicy">
+        <h1>Privacy Policy</h1>
+        <p>Your privacy is important to us. This Privacy Policy outlines the types of personal information we collect, how we use it, and how we protect it.</p>
+        
+        <h2>Information We Collect</h2>
+        <p>We collect personal information such as name, email address, phone number, and payment details when you book a holiday package or create an account on our website. We may also collect non-personal information such as IP address, browser type, and device information for analytics purposes.</p>
+        
+        <h2>How We Use Your Information</h2>
+        <p>We use your personal information to process bookings, provide customer support, improve our services, and send promotional offers or newsletters. We do not sell or share your personal information with third parties except as required by law or with your consent.</p>
+        
+        <h2>Security</h2>
+        <p>We implement appropriate security measures to protect your personal information from unauthorized access, disclosure, alteration, or destruction. However, no method of transmission over the internet or electronic storage is 100% secure, and we cannot guarantee absolute security.</p>
+        
+        <h2>Third-Party Links</h2>
+        <p>Our website may contain links to third-party websites or services. We are not responsible for the privacy practices or content of these third-party sites. We encourage you to review the privacy policies of those websites before providing any personal information.</p>
+        
+        <h2>Changes to This Privacy Policy</h2>
+        <p>We reserve the right to update or change our Privacy Policy at any time. Any changes will be effective immediately upon posting the revised Privacy Policy on this page.</p>
+        
+        <h2>Contact Us</h2>
+        <p>If you have any questions or concerns about our Privacy Policy, please contact us:</p>
+        <ul>
+            <li>Email: privacy@tourtrove.com</li>
+            <li>Phone: +1-123-456-7890</li>
+            <!-- Include any other contact details you want to provide -->
+        </ul>
+    </div>
+    <div style="height: 530px;"></div>
+    <%- include("includes/footer.ejs") %>
+</body>
+</html>

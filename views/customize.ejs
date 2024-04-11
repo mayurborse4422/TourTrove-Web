@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TourTrove</title>
+  <link rel="icon" href="assets/titlelogo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/customize.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <%- include("includes/Navbar.ejs") %>
+    <div class="img-div">
+		<div class="form">
+			<form action="/customize" method="POST">
+				<h2>Customize Your Trip</h2>
+				<h6>Fill the form below and we'll get back to you:</h6>
+				<div class="form-group">
+					<input type="text" class="form-control" name="customize[name]"
+						placeholder="Your Name">
+				</div>
+				<div class="form-grou">
+					<input type="text" class="form-control" name="customize[phonenumber]"
+						placeholder="Phone Number">
+				</div>
+				<div class="form-group">
+					<input type="text" class="form-control" name="customize[dateoftravel]" onfocus="(this.type='date')"
+						placeholder="Choose Date Of Travel">
+				</div>
+				<div class="form-group">
+					<input type="text" class="form-control" name="customize[noofpeople]"
+						placeholder="No. of People">
+				</div>
+				<div class="form-group">
+					<input type="text" class="form-control" name="customize[destination]"
+						placeholder="Destination you are Planning">
+				</div>
+				<div class="button"><button class="btn btn-primary" type="submit">Submit</button></div>
+			</form>
+		</div>
+	</div>
+    <div style="height: 250px;"></div>
+    <%- include("includes/footer.ejs") %>
+</body>
+</html>

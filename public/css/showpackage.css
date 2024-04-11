@@ -1,0 +1,241 @@
+body {
+    background-color: white !important;
+    /* color: black !important; */
+}
+
+@media screen and (min-width: 800px) {
+    .mainshow {
+        position: absolute;
+        top: 20%;
+        left: 24%;
+        width: 610px;
+    }
+
+    .mainshow img {
+        height: 350px;
+        width: 610px;
+        border-radius: 30px;
+        margin-top: 22px;
+    }
+
+    .mainshow .title {
+        margin-left: 10px;
+        color: black !important;
+    }
+
+    .duration {
+        font-size: 1.2rem;
+    }
+
+    .titledown {
+        margin-left: 10px;
+        margin-top: 22px;
+        display: flex;
+        justify-content: space-between;
+        color: black !important;
+    }
+
+    .location {
+        font-size: 1.3rem;
+    }
+
+    .startingpoint {
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin-left: 10px;
+        color: black !important;
+        margin-top: 8px;
+    }
+
+    .mainshow h3 {
+        font-size: 1.3rem;
+        margin-top: 13px;
+        font-weight: 300 !important;
+        color: grey !important;
+        margin-left: 10px;
+        margin-top: 20px;
+        color: grey !important;
+    }
+
+    .accomodation {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .accomodation div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 8px;
+    }
+
+    .accomodation div i {
+        font-size: 3.3rem;
+        color: black !important;
+    }
+
+    .accomodation div h4 {
+        color: black !important;
+    }
+
+    .overview {
+        margin-top: 15px;
+        margin-left: 10px;
+        color: black !important;
+        line-height: 20.9px;
+        letter-spacing: 0.2px;
+        font-weight: 530 !important;
+        font-size: 1.1rem;
+    }
+
+    .duration {
+        font-size: 1.3rem;
+    }
+
+    .adminbutton {
+        margin-top: 30px;
+        margin-bottom: 50px;
+        margin-left: 10px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .bookingtitle {
+        text-align: center;
+        margin-bottom: 20px;
+        color: red;
+        animation: blink 1s infinite alternate;
+    }
+
+    .adminbutton a{
+        color: white !important;
+    }
+
+    @keyframes blink {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .mainshow {
+        position: absolute;
+        top: 8%;
+        margin-left: 20px;
+        width: 260px;
+    }
+
+    .mainshow img {
+        height: 270px;
+        width: 350px;
+        border-radius: 22px;
+        margin-top: 12px;
+    }
+
+    .mainshow .title {
+        margin-left: 10px;
+    }
+
+    .duration {
+        font-size: 1.2rem;
+    }
+
+    .titledown {
+        margin-left: 10px;
+        margin-top: 12px;
+        display: flex;
+        justify-content: space-between;
+        color: black !important;
+    }
+
+    .location {
+        font-size: 1.3rem;
+    }
+
+    .startingpoint {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-left: 10px;
+        color: black !important;
+        margin-top: 8px;
+    }
+
+    .mainshow h3 {
+        margin-top: 13px;
+        font-weight: 300 !important;
+        color: grey !important;
+        margin-left: 10px;
+        margin-top: 14px;
+    }
+
+    .accomodation {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .accomodation div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 8px;
+    }
+
+    .accomodation div i {
+        font-size: 3.3rem;
+        color: black !important;
+    }
+
+    .accomodation div h4 {
+        color: black !important;
+    }
+
+    .overview {
+        margin-top: 15px;
+        margin-left: 10px;
+        color: black !important;
+        line-height: 20.9px;
+        letter-spacing: 0.2px;
+        font-weight: 530 !important;
+        font-size: 1.1rem;
+    }
+
+    .duration {
+        font-size: 1.3rem;
+    }
+
+    .adminbutton {
+        margin-top: 30px;
+        margin-bottom: 50px;
+        margin-left: 10px;
+        display: flex;
+    }
+
+    .bookingtitle {
+        text-align: center;
+        margin-bottom: 20px;
+        color: red;
+        animation: blink 1s infinite alternate;
+    }
+
+    .adminbutton a{
+        color: black !important;
+    }
+
+    @keyframes blink {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+}

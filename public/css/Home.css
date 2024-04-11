@@ -1,0 +1,303 @@
+*{
+    font-family: sans-serif;
+}
+body{
+    background-color: white !important;
+}
+@media screen and (min-width: 1023px){
+    .Hii{
+        height: 115px;
+    }
+}
+@media screen and (max-width: 1023px){
+    .Hii{
+        height: 80px;
+    }
+}
+.searchhome{
+   position: absolute;
+   height:33%;
+   width:88%;
+   left: 5%;
+   background-image: url("/assets/searchbg.jpg");
+   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   border-radius: 24px;
+   z-index: 1;
+}
+@media screen and (max-width: 1023px){
+    .searchhome{
+       height:28%;
+    }
+}
+.first_half{
+    font-weight: 300;
+    font-size: 33px;
+}
+.second_half{
+    font-weight: 700;
+    font-size: 43px;
+}
+.searchhometitle{
+    text-align: center;
+    color: white;
+    margin-top: 13px;
+}
+
+.formsearch{
+    position: relative;
+    top: 20px;
+}
+
+.formsearch .fa-search{
+    position: absolute;
+    top:20px;
+    left: 20px;
+    color: #9ca3af;
+}
+
+.formsearch span{
+
+    position: absolute;
+    right: 17px;
+    top: 13px;
+    padding: 2px;
+    border-left: 1px solid #d1d5db;
+
+}
+
+.form-input{
+    text-align: center;
+    height: 55px;
+    /* text-indent: 13px; */
+    border-radius: 35px;
+    font-size: 21px;
+}
+
+.form-input:focus{
+    box-shadow: none;
+}
+
+.wrapper { 
+	max-width: 88%; 
+	width: 100%; 
+	position: relative; 
+    margin-left: 5%;
+} 
+
+.wrapper i { 
+	height: 50px; 
+	width: 50px; 
+	background: white;
+	text-align: center; 
+	line-height: 50px; 
+	border-radius: 50%; 
+	cursor: pointer; 
+	position: absolute; 
+	top: 50%; 
+	font-size: 1 rem; 
+	transform: translateY(-50%); 
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.73); 
+
+} 
+
+.wrapper i:first-child { 
+	left: -22px; 
+    z-index: 1;
+} 
+
+.wrapper i:last-child { 
+	right: -22px; 
+    z-index: 1;
+} 
+
+.wrapper .carousel { 
+	display: grid; 
+	grid-auto-flow: column; 
+	grid-auto-columns: calc((100% / 3) - 50px); 
+	gap: 6px; 
+	overflow-x: auto; 
+	scroll-snap-type: x mandatory; 
+	scroll-behavior: smooth; 
+	scrollbar-width: 0; 
+    margin-right: 0;
+} 
+
+
+
+.carousel::-webkit-scrollbar { 
+	display: none; 
+} 
+
+.carousel :where(.card, .img) { 
+	display: flex; 
+	align-items: center; 
+	justify-content: center; 
+} 
+
+.carousel.dragging { 
+	scroll-snap-type: none; 
+	scroll-behavior: auto; 
+} 
+
+.carousel.no-transition { 
+	scroll-behavior: auto; 
+} 
+
+.carousel.dragging .card { 
+	cursor: grab; 
+	user-select: none; 
+} 
+
+.carousel .card { 
+	scroll-snap-align: start; 
+	height: 450px; 
+	background: white; 
+	border-radius: 20px; 
+    border: none; 
+	display: flex; 
+	cursor: pointer; 
+	width: 93%; 
+	align-items: center; 
+	justify-content: center; 
+	flex-direction: column; 
+} 
+.carousel .card:hover { 
+	transform: scale(1.03);
+} 
+
+.card .img { 
+	width: 288px; 
+	height: 310px; 
+    position: absolute;
+    top: 0;
+} 
+
+
+.card .img img { 
+	width: 288px; 
+	height: 310px; 
+	border-radius: 20px 20px 20px 20px; 
+    object-fit: cover;
+    
+} 
+
+@media screen and (max-width: 900px) { 
+	.wrapper .carousel { 
+		grid-auto-columns: calc((100% / 2) - 9px); 
+
+	} 
+} 
+
+@media screen and (max-width: 600px) { 
+	.wrapper .carousel { 
+		grid-auto-columns: 100%; 
+
+	} 
+}
+
+.package{
+    position: absolute;
+    top: 330px;
+    left: 15px;
+    right: 5px;
+    margin-top: -10px;
+}
+
+
+.packagetitle{
+    font-size: 22px;
+    font-weight: 700;
+    position: relative;
+    bottom: -6px;
+}
+.packageduration{
+    font-size: 18.2px;
+    font-weight: 600;
+    position: relative;
+    bottom: -8px;
+    color: red;
+    margin-left: 22px;
+}
+.fa-calendar{
+    height: 0 !important;
+    width: 0 !important;
+}
+.fa-calendar::before{
+    position: absolute !important;
+    top: -27px !important;
+}
+.packageprice{
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+    bottom: -10px;
+    color: black;
+}
+
+#flashMessage {
+	height: 40px;
+	width: 700px;
+    position: relative;
+    left: 20%;
+	text-align: center;
+	padding-top: 9px;
+	background-color: rgba(0,360,0,0.14);
+	color: darkgreen;
+	font-weight: bold;
+	border: 1px solid green;
+	border-radius: 10px;
+	margin-top: -8px;
+    margin-bottom: 10px;
+  }
+
+.indiatrip{
+    position: relative;
+    top: 40%;
+}
+
+.indiatriptitle{
+    top: 39%;
+    margin-left: 5%;
+    position: relative;
+    color: black;
+}
+.abroadtriptitle{
+    top: 41%;
+    margin-left: 5%;
+    position: relative;
+    color: black;
+}
+
+.abroadtrip{
+    position: relative;
+    top: 44%;
+}
+ 
+ .custom {
+   position: relative;
+   /* left: 20%; */
+   top: 300px;
+   margin-inline: auto;
+   text-align: center;
+   color: #fff;
+   height: 70px;
+   width: 80%;
+ }
+
+ .custom img{
+    height: 150px;
+   width: 94%;
+    border-radius: 40px;
+ }
+ 
+ .customtitle {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-55%,15%);
+   font-size: 2.7rem;
+   font-weight: 600;
+ }
+ 

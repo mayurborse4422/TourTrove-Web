@@ -1,0 +1,90 @@
+
+* {
+    box-sizing: border-box;
+}
+
+.searchcard {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    /* margin-inline: auto; */
+    /* background: #f0f0ff; */
+    box-shadow: 0px 14px 14px rgba(34, 35, 58, 0.4);
+    padding: 17px;
+    border-radius: 20px;
+    height: 300px;
+    transition: all .3s;
+	border: 1px solid black;
+    margin-bottom: 40px;
+    position: relative;
+    left: -75px;
+    margin-left: 27%;
+}
+
+.searchcards{
+    position: relative;
+    top: 130px;
+    display: flex;
+    flex-direction: column;
+}
+
+.searchcard__item {
+    display: flex;
+}
+
+.searchcard__img {
+    width: 470px;
+    height: 260px;
+    border-radius: 16px;
+	position: absolute;
+    left: -90px;
+    object-fit: contain;
+}
+.searchcard__img1 {
+    object-fit: cover;
+	width: 470px;
+    height: 260px;
+	border-radius: 16px;
+}
+
+.searchcard__content {
+    position: absolute;
+    left: 450px;
+    width: calc(100% - 400px); 
+}
+
+
+.searchcard__title {
+	position: relative;
+	top: 30px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    max-width: calc(100% - 130px);
+}
+.searchcard__duration{
+	position: relative;
+	top: 30px;
+	margin-bottom: 20px;
+	font-size: 1.2rem;
+	font-weight: 500;
+    color: red;
+}
+.searchcard__location{
+	position: relative;
+	top: 30px;
+	margin-bottom: 20px;
+	font-size: 1.2rem;
+	font-weight: 500;
+}
+.searchcard__price{
+	position: relative;
+	top: 30px;
+	margin-bottom: 20px;
+	font-size: 1.2rem;
+	font-weight: 500;
+}
+a{
+    color: black;
+}
+
+

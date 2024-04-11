@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TourTrove</title>
+  <link rel="icon" href="assets/titlelogo.jpg" type="image/x-icon">
+</head>
+<style>
+    .services{
+        position: absolute;
+        top: 110px;
+        width: 70%;
+        left: 15%;
+    }
+    h1, h2{
+        margin-top: 20px;
+        margin-bottom: 3px;
+    }
+    p, li{
+        color: #5a5b5c;
+        font-size: 1.1rem;
+    }
+</style>
+<body>
+    <%- include("includes/Navbar.ejs") %>
+    <div class="services">
+        <h1>Our Services</h1>
+        <p>At TourTrove, we offer a wide range of services to make your holiday booking experience convenient and enjoyable.</p>
+        
+        <h2>1. Holiday Packages</h2>
+        <p>Choose from a variety of meticulously crafted holiday packages tailored to suit different interests, budgets, and travel preferences. Whether you're seeking adventure, relaxation, or cultural immersion, we have the perfect package for you.</p>
+        
+        <h2>2. Customized Itineraries</h2>
+        <p>Can't find the perfect package? No problem! Our team of experienced travel experts can create customized itineraries based on your unique preferences and requirements. From accommodation and transportation to activities and sightseeing, we'll design a personalized travel experience just for you.</p>
+        
+        <h2>3. Secure Booking</h2>
+        <p>Book your holiday with confidence on our secure platform. Our streamlined booking process ensures a hassle-free experience, allowing you to reserve your dream vacation in just a few clicks. Rest assured that your personal information and payment details are protected with advanced encryption technology.</p>
+        
+        <h2>4. Expert Guidance</h2>
+        <p>Need assistance or advice? Our friendly and knowledgeable customer support team is here to help. Whether you have questions about destinations, activities, or travel logistics, we're available to provide expert guidance and assistance every step of the way.</p>
+        
+        <h2>5. Exclusive Deals</h2>
+        <p>Take advantage of exclusive deals and discounts available only to TourTrove customers. Enjoy special offers on accommodation, transportation, tours, and more, saving you money on your next holiday getaway.</p>
+    </div>
+
+    <div style="height: 420px;"></div>
+    <%- include("includes/footer.ejs") %>
+</body>
+</html>
