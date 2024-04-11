@@ -17,7 +17,6 @@ const booking = require("./models/booking.js");
 const customize = require("./models/customize.js");
 const path = require("path");
 const bodyParser = require('body-parser');
-const ejsMate = require("ejs-Mate");
 const methodOverride = require("method-override");
 const multer  = require('multer');
 const {storage} = require("./cloudConfig.js");
@@ -63,7 +62,6 @@ app.set("view-engine","ejs");
 app.set("views", path.join(__dirname, "views"));
 app.use(express.urlencoded({extended: true}));
 app.use(bodyParser.json());
-app.engine("ejs", ejsMate);
 app.use(express.static(path.join(__dirname,"/public")));
 
 app.use(express.json());
