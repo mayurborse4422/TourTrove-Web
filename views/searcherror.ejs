@@ -47,8 +47,10 @@
 
 <body>
     <%- include("includes/Navbar.ejs") %>
-        <div class="error"><b>No Results Found</b></div>
+        <div class="error"><b><%= errorMessage %></b></div>
         <div class="explore"><a href="/">Explore Packages</a></div>
+        <div style="height: 20px;"></div>
+    <%- include("includes/footer.ejs") %>
 </body>
 
 </html>
