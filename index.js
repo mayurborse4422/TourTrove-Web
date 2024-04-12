@@ -73,6 +73,7 @@ app.use((req,res,next) => {
     next();
 });
 
+
 app.get("/customize", (req,res) => {
     res.render("customize.ejs");
 });
@@ -102,6 +103,25 @@ saveRedirecturl = (req,res,next) => {
     }
     next();
 }
+
+app.get("/mytrips", async (req,res) => {
+    if(!req.isAuthenticated()){
+        req.session.redirectUrl = req.originalUrl;
+        req.flash("error","You must be Logged In");
+        return res.redirect("/login");
+    }
+    const bookings = await booking.find({ "email": req.session.currUser.email });
+    const packageids = [];
+    for(let booking of bookings){
+        packageids.push(`/${booking.packageid}`);
+    }
+    if(bookings.length == 0){
+        res.render("searcherror.ejs", {errorMessage: "No Trips Found"});
+    }
+    else{
+       res.render("mytrips.ejs", {packageids: packageids, bookings: bookings});
+    }
+});
 
 app.get("/login", (req,res) => {
     res.render("login.ejs",{ msg: req.flash("error") });
@@ -174,7 +194,7 @@ app.post("/search", async(req,res) => {
         }
     }
     if(results == ""){
-        res.render("searcherror.ejs");
+        res.render("searcherror.ejs", {errorMessage: "No Packages Found"});
     }
     else{
        res.render("showsearch.ejs",{results});
@@ -283,7 +303,6 @@ app.delete("/delete/:id" , async (req,res) => {
     }
     res.redirect("/");
 });
-
 
 app.get("/", async (req,res) => {
     const indpackage = await indianpackage.find({});
